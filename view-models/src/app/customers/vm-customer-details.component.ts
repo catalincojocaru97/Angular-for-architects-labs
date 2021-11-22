@@ -13,7 +13,7 @@ import { ngIfAnim } from '../animations';
     <table class="table">
       <tr>
         <!-- Increase rowspan to 6 (to make room for "Pet") -->
-        <td rowspan="5"><img class="details" src="{{vm.photo}}"></td>
+        <td rowspan="6"><img class="details" src="{{vm.photo}}"></td>
         <td><b>First Name</b>: </td>
         <td><input [(ngModel)]="vm.first" placeholder="First"></td>
       </tr>
@@ -27,7 +27,10 @@ import { ngIfAnim } from '../animations';
       </tr>
 
       <!-- Add Pet as an input -->
-
+      <tr>
+        <td>Pet: </td>
+        <td><input [(ngModel)]="vm.pet" placeholder="Pet"></td>
+      </tr>
       <tr>
         <td>Birth Date: </td>
         <td>
