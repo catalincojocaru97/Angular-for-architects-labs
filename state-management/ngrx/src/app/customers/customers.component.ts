@@ -23,10 +23,11 @@ export class CustomersComponent implements OnInit {
     }
 
     ngOnInit() {
-
+        this.getCustomers();
     }
 
-    // Add getCustomers() function here
-
+    getCustomers() {
+        this.store.dispatch(new CustomerAction.GetCustomers());
+    }
 
 }
