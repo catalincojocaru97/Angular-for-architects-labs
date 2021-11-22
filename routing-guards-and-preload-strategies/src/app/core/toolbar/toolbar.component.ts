@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class ToolbarComponent {
   labTitle = 'routing-guards-and-preload-strategies';
-  labState = 'begin';
+  labState = 'end';
 }
